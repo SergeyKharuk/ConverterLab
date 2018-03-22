@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#546d7b</color>
+    <color name="colorPrimaryDark">#374750</color>
+    <color name="colorAccent">#546d7b</color>
+
+    <color name="colorApp">#546d7b</color>
+    <color name="colorAppTransparent">#afbec5</color>
+    <color name="colorLight">#ced7dd</color>
+
+    <color name="bank_address_phone_color">#434343</color>
+    <color name="pink">#FF4081</color>
+
+    <color name="risen_price">#015f68</color>
+    <color name="not_risen_price">#890e4e</color>
+</resources>

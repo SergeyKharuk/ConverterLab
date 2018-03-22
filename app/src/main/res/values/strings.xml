@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Converter Lab</string>
+    <string name="msg_loading">Loading, please wait..</string>
+    <string name="title_CurrencyName">Название валюты</string>
+    <string name="title_ask_bid">Покупка/Продажа</string>
+    <string name="error_no_internet">You are offline. Please check your internet connection!</string>
+    <string name="action_doCall">Позвонить</string>
+    <string name="action_site">Сайт</string>
+    <string name="action_map">Карта</string>
+</resources>

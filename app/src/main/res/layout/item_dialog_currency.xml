@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_DL"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_currency_name_DL"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="USD"
+            android:textSize="@dimen/bank_name_text_size"
+            android:textColor="@color/not_risen_price"/>
+
+        <TextView
+            android:id="@+id/tv_currency_price_DL"
+            android:layout_weight="1"
+            android:textSize="@dimen/bank_name_text_size"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorApp"
+            android:text="22.24/23.91"
+            android:gravity="end" />
+
+
+</LinearLayout>

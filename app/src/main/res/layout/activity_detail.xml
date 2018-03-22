@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        app:cardBackgroundColor="@color/colorApp"
+        android:elevation="@dimen/elevation_card_view"
+        app:cardCornerRadius="@dimen/corner_radius_card_view"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/iv_back_AD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow"
+                android:background="?attr/selectableItemBackground"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_back_AD"
+                android:layout_toLeftOf="@+id/iv_share_AD"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_bank_name_AD"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/bank_name_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_city_AD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/bank_address_text_size"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_share_AD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share"
+                android:background="?attr/selectableItemBackground"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_below="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                android:elevation="@dimen/elevation_card_view"
+                app:cardCornerRadius="@dimen/corner_radius_card_view"
+                android:layout_marginTop="@dimen/cards_padding_in_detail_activity"
+                android:layout_marginHorizontal="@dimen/cards_padding_in_detail_activity">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_info_bank_name_AD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/pink"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/bank_name_text_size"
+                        android:padding="@dimen/cards_padding_in_detail_activity"/>
+
+                    <TextView
+                        android:id="@+id/tv_detail_info_AD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorApp"
+                        android:paddingLeft="@dimen/cards_padding_in_detail_activity"
+                        android:paddingRight="@dimen/cards_padding_in_detail_activity"
+                        android:paddingBottom="@dimen/cards_padding_in_detail_activity"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/elevation_card_view"
+                app:cardCornerRadius="@dimen/corner_radius_card_view"
+                app:cardBackgroundColor="@android:color/white"
+                android:layout_marginHorizontal="@dimen/cards_padding_in_detail_activity"
+                android:layout_marginTop="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/cards_padding_in_detail_activity">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_CurrencyName"
+                        android:textSize="@dimen/bank_region_text_size"
+                        android:textColor="@color/colorApp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_ask_bid"
+                        android:textColor="@color/colorApp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/elevation_card_view"
+                app:cardCornerRadius="@dimen/corner_radius_card_view"
+                android:layout_marginHorizontal="@dimen/cards_padding_in_detail_activity"
+                android:layout_marginVertical="5dp"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_AD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_AD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        fab:menu_fab_size="normal"
+        fab:menu_showShadow="true"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="@color/pink"
+        fab:menu_colorPressed="#FFFF0A5D"
+        fab:menu_colorRipple="@color/pink"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/ic_menu_fab"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_paddingTop="10dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_textColor="#3D3D3D"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorNormal="#ffffff"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="@android:color/transparent"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_map_fab"
+            fab:fab_colorNormal="@color/colorLight"
+            fab:fab_size="mini"
+            fab:fab_label="@string/action_map"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_link_fab"
+            fab:fab_colorNormal="@color/colorLight"
+            fab:fab_size="mini"
+            fab:fab_label="@string/action_site"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone_fab"
+            fab:fab_colorNormal="@color/colorLight"
+            fab:fab_size="mini"
+            fab:fab_label="@string/action_doCall"
+            />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>
